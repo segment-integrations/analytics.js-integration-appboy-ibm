@@ -39,7 +39,7 @@ describe('Appboy', function() {
   });
 
   it('should have the right settings', function() {
-    analytics.compare(Appboy, integration('Appboy')
+    analytics.compare(Appboy, integration('Appboy-IBM')
       .global('appboy')
       .option('apiKey', '')
       .option('safariWebsitePushId', '')
