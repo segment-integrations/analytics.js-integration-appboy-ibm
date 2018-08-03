@@ -1,3 +1,10 @@
+1.7.0 / 2018-08-03
+==================
+
+  * Ignore coverage
+  * Add coverage
+  * Add a version of Appboy for IBM
+
 1.7.0 / 2018-07-31
 ==================
 
