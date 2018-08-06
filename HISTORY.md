@@ -1,7 +1,12 @@
+1.7.3 / 2018-08-06
+==================
+
+  * Fix behavior when userId is null or undefined
+
 1.7.2 / 2018-08-03
 ==================
 
-  * Fix tests so tag builds. 
+  * Fix tests so tag builds.
 
 1.7.1 / 2018-08-03
 ==================

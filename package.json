@@ -1,7 +1,7 @@
 {
   "name": "@segment/analytics.js-integration-appboy-ibm",
   "description": "The Appboy analytics.js integration.",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "keywords": [
     "analytics.js",
     "analytics.js-integration",
