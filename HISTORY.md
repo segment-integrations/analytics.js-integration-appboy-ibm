@@ -1,3 +1,8 @@
+1.7.4 / 2018-08-06
+==================
+
+  * Only initialize when brazeInitializeCB returns (#4)
+
 1.7.3 / 2018-08-06
 ==================
 
