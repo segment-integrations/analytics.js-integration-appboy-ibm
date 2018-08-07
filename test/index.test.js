@@ -123,11 +123,19 @@ describe('Appboy', function() {
     it('should use initializeV2 if version is set to 2', function(done) {
       var V1spy = sinon.spy(appboy, 'initializeV1');
       var V2spy = sinon.spy(appboy, 'initializeV2');
+
+      var brazeInitializeCBcalled = false;
+      window.brazeInitializeCB = function(callback) {
+        brazeInitializeCBcalled = true;
+        callback();
+      };
+
       appboy.options.version = 2;
       analytics.once('ready', function() {
         try {
           assert(V2spy.called);
           assert(!V1spy.called);
+          assert(brazeInitializeCBcalled);
           done();
         } catch (e) {
           done(e);
