@@ -1,3 +1,8 @@
+1.7.6 / 2018-08-07
+==================
+
+* Moves lifecycle hook to before Open Session call. #5
+
 1.7.5 / 2018-08-06
 ==================
 
