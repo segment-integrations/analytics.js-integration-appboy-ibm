@@ -1,3 +1,9 @@
+1.7.7 / 2018-08-07
+==================
+
+* Actually releases changes in #5.
+* 1.7.6 was never released and was used to validate NPM issues.
+
 1.7.6 / 2018-08-07
 ==================
 
