@@ -1,3 +1,10 @@
+1.7.8 / 2018-08-08
+==================
+
+  * Merge pull request #8 from froodian/remove-snippet
+  * Require appboy v2 through npm to eliminate reliance on a second CDN and remove the use of implicit global variables
+  * Merge pull request #7 from segment-integrations/release/1.7.7
+
 1.7.7 / 2018-08-07
 ==================
 
