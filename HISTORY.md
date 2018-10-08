@@ -1,3 +1,8 @@
+1.7.9 / 2018-10-08
+==================
+
+  * Include a lightly-modified SDK directly into index.js (#9)
+
 1.7.8 / 2018-08-08
 ==================
 
