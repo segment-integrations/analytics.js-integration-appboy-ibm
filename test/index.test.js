@@ -19,6 +19,7 @@ describe('Appboy', function() {
     trackAllPages: false,
     trackNamedPages: false,
     customEndpoint: '',
+    noCookies: false,
     version: 1
   };
 
@@ -57,6 +58,7 @@ describe('Appboy', function() {
       .option('trackAllPages', false)
       .option('trackNamedPages', false)
       .option('customEndpoint', '')
+      .option('noCookies', false)
       .option('version', 1)
     );
   });
@@ -178,6 +180,20 @@ describe('Appboy', function() {
       analytics.once('ready', function() {
         try {
           analytics.assert(spy.args[0][1].safariWebsitePushId, options.safariWebsitePushId);
+          done();
+        } catch (e) {
+          done(e);
+        }
+      });
+      analytics.initialize();
+    });
+
+    it('should set `noCookies` to true if enabled in Segment settings', function(done) {
+      appboy.options.noCookies = true;
+      var spy = sinon.spy(appboy, 'initializeTester');
+      analytics.once('ready', function() {
+        try {
+          analytics.assert(spy.args[0][1].noCookies, options.noCookies);
           done();
         } catch (e) {
           done(e);
